@@ -161,6 +161,6 @@ class GameView(context: Context) : View(context) {
             paint.color = Color.WHITE; paint.textSize = 40f
             c.drawText("Tap karke dobara khelo", cx, cy + 70f, paint)
         }
-        if (running) postInvalidateOnAnimationFrame()
+                  if (running) postInvalidateOnAnimation()
     }
 }

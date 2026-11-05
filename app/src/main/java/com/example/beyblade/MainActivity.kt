@@ -10,6 +10,6 @@ class MainActivity : Activity() {
         game = GameView(this)
         setContentView(game)
     }
-        override fun onResume() { super.onResume(); game.running = true; game.postInvalidateOnAnimation() }
+    override fun onResume() { super.onResume(); game.running = true; game.postInvalidateOnAnimation() }
     override fun onPause() { super.onPause(); game.running = false }
 }
